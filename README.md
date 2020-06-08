@@ -1,8 +1,8 @@
 # Aggregate hosts
 
-Create and automatically maintain a list of hosts records, with **`SrcMac` as the unique key**, based on querying McAfee SIEM logs.
+Create and automatically maintain a list of hosts records, based on querying McAfee SIEM logs.
 
-Will generate a JSON file (`hosts.json` by default) containing list of dictionnary with host record infos : `user`, `host`, `macaddress`, `seen`, `ip`.
+Will generate a JSON file (`hosts.json` by default) containing list of dictionnary with host record infos : `user`, `host`, `macaddress`, `seen`, `ip`. Hosts are identified and aggregated by their mac addresses.
 
 Use [manuf](https://github.com/coolbho3k/manuf) to resolve vendors Mac addresses and [msiempy](https://github.com/mfesiem/msiempy) to query McAfee SIEM logs.
 
